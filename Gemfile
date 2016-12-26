@@ -4,9 +4,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
+#gem for authentication
 gem 'devise'
+
+#gem for bootstrap styling
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+
+#gem for getting the stock quotes
+gem 'stock_quote'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

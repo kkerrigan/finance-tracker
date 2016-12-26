@@ -5,6 +5,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
     root 'welcome#index'
+    
+  #route for portfolio page
+    get 'my_portfolio' => "users#my_portfolio"
+    
+  #route to seach for a specific stock  
+    get 'search_stocks' => "stocks#search"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
