@@ -15,4 +15,7 @@ Rails.application.routes.draw do
     
   #route to seach for a specific stock  
     get 'search_stocks' => "stocks#search"
+    
+  #route for friends page
+    get 'my_friends' => "users#my_friends"
 end
