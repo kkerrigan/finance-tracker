@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   
   #routes for many-to-many table
   resources :user_stocks, except: [:show, :edit, :update]
+  resources :users, only: [:show]
+  resources :friendships
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -18,4 +20,8 @@ Rails.application.routes.draw do
     
   #route for friends page
     get 'my_friends' => "users#my_friends"
+    
+  #routes for friend lookup
+    get 'search_friends' => "users#search"
+    post 'add_friend' => "users#add_friend"
 end
